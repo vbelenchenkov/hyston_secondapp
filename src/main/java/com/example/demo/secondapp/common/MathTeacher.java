@@ -1,0 +1,17 @@
+package com.example.demo.secondapp.common;
+
+import jdk.jfr.Label;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MathTeacher implements Teacher{
+    public MathTeacher() {
+        System.out.println("Bean of class - " + this.getClass().getSimpleName());
+    }
+
+    @Override
+    public String getHomeWork() {
+        return "solve the equations...";
+    }
+}
